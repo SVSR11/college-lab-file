@@ -16,23 +16,23 @@ void main()
 
 	switch (ch) 
     {
-		case '+':
+		 case '+':
 			printf("%f+%f=%f",num1,num2,(num1+num2));
 			break;
 
-		case '-':
+		 case '-':
 			printf("%f-%f=%f",num1,num2,(num1-num2));
 			break;
 
-		case '*':
+		 case '*':
 			printf("%f*%f=%f",num1,num2,(num1*num2));
 			break;
         
-        case '/':
+         case '/':
 			printf("%f/%f=%f",num1,num2,(num1/num2));
 			break;
 
-		default:
+		 default:
 			printf("Invalid Input....");
 			break;
 	}
