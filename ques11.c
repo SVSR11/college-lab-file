@@ -14,7 +14,8 @@ void main()
     
     printf("\n%c",ch);
 
-	switch (ch) 
+    switch(ch)
+    
     {
 		 case '+':
 			printf("%f+%f=%f",num1,num2,(num1+num2));
