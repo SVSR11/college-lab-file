@@ -2,34 +2,33 @@
 
 void main()
 {
-	float num1,num2;
+	int num1,num2;
     char ch;
-    printf("Enter the value of two numbers:\nNUM1:");
-    scanf("%f",&num1);
-    printf("NUM2:");
-    scanf("%f",&num2);
-    
     printf("Enter one of the following chs(+,-,*,/):");
     scanf("%c",&ch);
-    
-    printf("\n%c",ch);
 
+    printf("Enter the value of two numbers:\nNUM1:");
+    scanf("%d",&num1);
+    printf("NUM2:");
+    scanf("%d",&num2);
+    
+    
     switch(ch)   
     {
 		 case '+':
-			printf("%f+%f=%f",num1,num2,(num1+num2));
+			printf("%d+%d=%d",num1,num2,(num1+num2));
 			break;
 
 		 case '-':
-			printf("%f-%f=%f",num1,num2,(num1-num2));
+			printf("%d-%d=%d",num1,num2,(num1-num2));
 			break;
 
 		 case '*':
-			printf("%f*%f=%f",num1,num2,(num1*num2));
+			printf("%d*%d=%d",num1,num2,(num1*num2));
 			break;
 
 		 case '/':
-			printf("%f/%f=%f",num1,num2,(num1/num2));
+			printf("%d/%d=%d",num1,num2,(num1/num2));
 			break;
 
 
