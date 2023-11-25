@@ -3,9 +3,9 @@ void main()
 {
     int a=0,b=1,c,inp;
     printf("Enter the limit:");
-    scanf("%d",inp);
+    scanf("%d",&inp);
 
-    for(;b<=inp;)
+    for(;(a+b)<=inp;)
     {
         c=a+b;
         a=b;
