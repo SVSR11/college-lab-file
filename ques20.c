@@ -12,7 +12,7 @@ void main()
         printf("Enter a binary value:");
         scanf("%d",&binary);
         
-        b=binary;''
+        b=binary;
         while(b!=0)
         {
             b/=10;
