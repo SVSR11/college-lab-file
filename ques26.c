@@ -41,8 +41,6 @@ void main()
     
     for(row_m3 =0; row_m3<3; row_m3++)
     {
-        
-
         for(column_m3=0; column_m3<3;column_m3++)
         {
         printf("%d ",sum_matrix[row_m3][column_m3]);
