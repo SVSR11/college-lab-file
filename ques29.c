@@ -1,48 +1,77 @@
-// C program for insertion sort
-#include <math.h>
-#include <stdio.h>
+#include<stdio.h>
 
-/* Function to sort an array 
-using insertion sort*/
-void insertionSort(int arr[], int n)
+void display(int arr[], int size)
 {
-	int i, key, j;
-	for (i = 1; i < n; i++) 
-	{
-		key = arr[i];
-		j = i - 1;
-
-		/* Move elements of arr[0..i-1], 
-		that are greater than key, 
-		to one position ahead of 
-		their current position */
-		while (j >= 0 && arr[j] > key) 
-		{
-			arr[j + 1] = arr[j];
-			j = j - 1;
-		}
-		arr[j + 1] = key;
-	}
+    for(int i=0; i<size;i++)
+    {
+        printf("%d ",arr[i]);
+    }
 }
 
-// A utility function to print 
-// an array of size n
-void printArray(int arr[], int n)
+void swap(int *a,int *b)
 {
-	int i;
-	for (i = 0; i < n; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
+    int temp=*a;
+    *a=*b;
+    *b=temp;
 }
 
-// Driver code
-int main()
+void selection_sort(int arr[],int size)
 {
-	int arr[] = {12, 11, 13, 5, 6};
-	int n = sizeof(arr) / sizeof(arr[0]);
+    int minindex;
+    for(int i=0; i<size;i++)
+    {
+        minindex=i;
+        for(int j=i;j<size;j++)
+        {
+            if(arr[j]<arr[minindex])
+            {
+                minindex=j;
+            }
+        }
+        if (minindex!=i)
+        {
+            swap(&arr[i],&arr[minindex]);
+        }
+    }
+    display(arr,size);
+}
+    
+    
+void insertion_sort(int arr[], int n)
+{
+    int i, key, j;
+    for (i = 1; i < n; i++) 
+    {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key) 
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+    display(arr,n);
+}  
 
-	insertionSort(arr, n);
-	printArray(arr, n);
 
-	return 0;
+void main()
+{
+    int size;
+    printf("enter the size of the array.. ");
+    scanf("%d",&size);
+    
+    int arr[size];
+    
+    printf("enter array elements...\n");
+    for(int i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("sorted array using selection sort  ");
+    selection_sort(arr,size);
+    printf("\nsorted array using insertion sort  ");
+    insertion_sort(arr,size);
+    
 }
