@@ -1,40 +1,58 @@
+
 #include<stdio.h>
-#include<string.h>
 
-int order;
-int digonalsum(int a[order][order], int order)
+int binary_search(int array[],int size,int element)
 {
-    int sum=0;
-    for(int i=0;i<order;i++)
+    int low=0,high=size-1,mid;
+    for(int i=0;i<size;i++)
     {
-        sum+=a[i][i];
-    }
-    return sum;
-}
-
-void main()
-{
-    
-    printf("enter order of matrix..");
-    scanf("%d",&order);
-
-    int matrix1[order][order];
-    
-    printf("enter matrix elements...\n");
-    
-    for(int i =0; i<order; i++)
-    {
-        printf("Enter row %d elements.",(i+1));
-
-        for(int j=0; j<order;j++)
+        mid=(low+high)/2;
+        if (array[mid]==element)
         {
-        scanf("%d",&matrix1[i][j]);
+            printf("element fount at %d index",mid);
+            return 0;
+        }
+        else
+        {
+            if (array[mid]>element)
+            {
+                high=mid;
+            }
+            else
+            {
+                low=mid;
+            }
         }
     }
-    
-    printf("sum of the digonal elements is:-%d",digonalsum(matrix1,order));
-    
-    
+    return -1;
 }
+int binary_search(int array[],int size, int element);
+
+int main()
+{
+    int size,element,result;
+    printf("enter size of array..");
+    scanf("%d",&size);
+
+    int array[size];
+    printf("enter array elements..\n");
+    for (int i=0;i<size ; i++)
+    {
+        scanf("%d",&array[i]);
+    }
+
+    printf("enter element to search..");
+    scanf("%d",&element);
+
+    result=binary_search(array,size,element);
+    if (result!=0)
+    {
+        printf("the element could not be found..");
+    }
+    return 0;
+
+}
+
+
 
 

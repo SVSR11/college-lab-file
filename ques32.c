@@ -1,35 +1,33 @@
 #include<stdio.h>
-#include<string.h>
-
-void concat()
+struct student
 {
-    char string3[10]="hello ";
-    char string4[10]="world";
-    strcat(string3,string4);
-    printf("\nconcatination  %s",string3);
+    char name[10];
+    int class1;
+    int marks;
+    int roll_no;
+};
+
+int main()
+{
+    struct student d; 
+    
+    printf("enter record of student  \n");
+    printf("student name ");
+    scanf("%s",d.name);
+
+    printf("class ");
+    scanf("%d",&d.class1);
+
+    
+    printf("\nstudent roll no ");
+    scanf("%d",&d.roll_no);
+    
+    printf("\nstudent marks ");
+    scanf("%d",&d.marks);
+
+    printf("Name\t\tRoll no\t\t\tClass\t\tMarks\n");
+    printf("%s\t\t%d\t\t\t%d\t\t%d\t\t",d.name, d.class1, d.roll_no, d.marks);
+
+    return 0;
 
 }
-
-void length(char string[10])
-{
-    printf("size of the entered string is.. %zu",strlen(string));
-}
-
-void stringcopy(char string1[10])
-{
-    char string2[10];
-    strcpy(string2,string1);
-    printf("\ncopied string:- %s",string2);
-}
-
-void main()
-{
-    char string1[10];
-    printf("enter a string...");
-    scanf("%s",string1);
-
-    length(string1);
-    stringcopy(string1);
-    concat();
-}
-
