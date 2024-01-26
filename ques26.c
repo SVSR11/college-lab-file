@@ -1,3 +1,7 @@
+/*26.	Write a program to sort the elements 
+of the array in ascending order using the 
+insertion sort and selection sort with function.*/
+
 #include<stdio.h>
 
 void display(int arr[], int size)

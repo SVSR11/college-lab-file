@@ -1,3 +1,4 @@
+/*29.	Write a program that finds the sum of diagonal elements of a m x n matrix.*/
 #include<stdio.h>
 #include<string.h>
 

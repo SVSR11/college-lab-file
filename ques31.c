@@ -1,3 +1,4 @@
+/*31.	Write a program to swap two elements using the concept of pointers.*/
 #include<stdio.h>
 void swap(int *a, int *b)
 {

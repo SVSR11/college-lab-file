@@ -1,3 +1,5 @@
+/*30.	Write a program to print the Fibonacci series 
+and find the factorial of a number using recursion.*/
 #include<stdio.h>
 
 int fib(int n)

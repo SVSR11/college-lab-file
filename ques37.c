@@ -1,3 +1,5 @@
+/*37.	Write a program to compare the contents of two files and 
+determine whether they are  the same or not.*/
 #include<stdio.h>
 #include<stdlib.h>
 

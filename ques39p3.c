@@ -1,3 +1,12 @@
+/*39.	Write a program to print the given pattern 
+
+54321
+ 4321
+  321
+   21
+    1
+
+*/
 #include<stdio.h>
 
 void main()

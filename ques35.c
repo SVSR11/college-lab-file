@@ -1,3 +1,5 @@
+/*35.	Write a program to implement strlen ( ), strcat ( ), strcpy ( )  
+without using the string library Functions.*/
 #include<stdio.h>
 #include<string.h>
 

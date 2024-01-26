@@ -1,3 +1,11 @@
+/*39.	Write a program to print the given pattern 
+
+*			
+** 		     
+***		      
+****
+
+*/
 #include<stdio.h>
 
 void main()

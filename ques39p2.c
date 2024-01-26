@@ -1,3 +1,12 @@
+/*39.	Write a program to print the given pattern 
+
+         A
+        BA
+       CBA
+      DCBA
+     EDCBA
+
+*/
 #include<stdio.h>
 
 void main()

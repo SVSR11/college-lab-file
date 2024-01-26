@@ -1,4 +1,4 @@
-
+/*27.	Write a program to search an element in an array using Binary Search*/
 #include<stdio.h>
 
 int binary_search(int array[],int size,int element)

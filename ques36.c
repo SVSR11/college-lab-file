@@ -1,3 +1,4 @@
+/*36.	Write a program to reverse the string.*/
 #include<stdio.h>
 #include<string.h>
 void main()

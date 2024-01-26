@@ -1,3 +1,4 @@
+/*28.	Write a program to add and multiply two matrices.*/
 #include<stdio.h>
 int r1,c1,r2,c2; // global declaration of order of matrix
 void display(int dis[r1][c1])
